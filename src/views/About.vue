@@ -1,5 +1,26 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <testcom/>
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+import testcom from '@/components/TestCom'
+
+export default {
+  name: 'home',
+  data() {
+    return {
+      amapNode: 'container'
+    }
+  },
+  components: {
+    testcom
+  }
+}
+</script>
+
+<style scoped lang="stylus">
+</style>
+
